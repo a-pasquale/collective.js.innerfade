@@ -1,0 +1,40 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.js.innerfade">
+
+    <!-- Resource directory for javascripts -->
+    <browser:resourceDirectory
+        name="collective.js.innerfade.javascripts"
+        directory='javascripts'
+    />
+
+    <!-- Resource directory for stylesheets -->
+    <browser:resourceDirectory
+        name="collective.js.innerfade.stylesheets"
+        directory='stylesheets'
+    />
+
+    <!-- Resource directory for images -->
+    <browser:resourceDirectory
+        name="collective.js.innerfade.images"
+        directory='images'
+    />
+
+    <browser:page
+        for="*"
+        name="folder_innerfade_view"
+        class=".folder_innerfade_view.FolderInnerfadeView"
+        template="folder_innerfade_view.pt"
+        permission="zope2.View"
+        />
+
+    <browser:page
+        for="*"
+        name="folder_innerfade_macro"
+        class=".folder_innerfade_view.FolderInnerfadeView"
+        template="folder_innerfade_macro.pt"
+        permission="zope2.View"
+        />
+
+</configure>

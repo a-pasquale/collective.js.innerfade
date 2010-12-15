@@ -1,0 +1,109 @@
+/**
+ * INNERFADE STYLES
+*/
+
+#InnerfadeContainer {
+    position: relative;
+}
+
+#InnerfadeContainer a:visited {
+    border-bottom: 0px;
+}
+
+#InnerfadeContainer a,
+#InnerfadeContainer a:hover,
+#InnerfadeContainer a:visited {
+    border-bottom: 0px !important;
+    color: #fff !important;
+}
+
+#Innerfade {
+    overflow: hidden;
+    height: 279px;
+}
+
+#Innerfade .caption,
+#Innerfade .overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 477px;
+}
+
+#Innerfade .overlay {
+    display: block;
+    margin: 0;
+    background: #000;
+    opacity: 0.6;
+    filter:alpha(opacity=60);
+}
+
+#Innerfade .caption p,
+#Innerfade .caption h2 {
+    color: #fff;
+    opacity: 1;
+    margin: 0;
+    font-size: 1em;
+}
+
+#Innerfade .title {
+    float: left;
+    margin: 10px 12px 5px 12px;
+}
+
+#Innerfade h2 {
+    float: left;
+    padding-right: 7px;
+}
+
+#Innerfade .caption p {
+    clear: both;
+    margin: 0 12px;
+    font: normal 11px/14px Arial, Helvetica;
+}
+
+#Innerfade .button {
+    float: left;
+    width: 68px;
+    height: 17px;
+    background-image: url(++resource++collective.js.innerfade.images/button_146x17.gif);
+    background-position: -73px 0;
+    font: normal 9px/19px Arial, Helvetica;
+    text-align: left;
+    padding-left: 5px;
+}
+
+#Innerfade .button:hover {
+    background-position: 0 0;
+}
+
+#InnerfadeNavigation {
+    z-index: 999;
+    position: absolute;
+    width: 133px;
+    height: 279px;
+    left: 470px;
+    top: 0;
+}
+
+#InnerfadeNavigation .imgnolink,
+#InnerfadeNavigation a {
+    display: block;
+    width: 133px;
+    height: 69px;
+    text-align: right;
+    margin-bottom: 1px;
+}
+
+#InnerfadeNavigation .imgnolink:hover,
+#InnerfadeNavigation a:hover,
+#InnerfadeNavigation .active {
+    background: url(++resource++collective.js.innerfade.images/arrow_8x69.png) no-repeat;
+}
+
+#InnerfadeNavigation img {
+    border: solid #fff;
+    border-width: 0 0 0 1px;
+}
+

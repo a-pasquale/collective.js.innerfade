@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<layers>
+    <layer name="collective.js.innerfade"
+        interface="collective.js.innerfade.interfaces.IInnerfadeSpecific" />
+</layers>
