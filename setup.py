@@ -5,7 +5,7 @@ version = '1.0'
 
 setup(name='collective.js.innerfade',
       version=version,
-      description="jQuery Innerfade plugin with additional marker interface for Folders'",
+      description="jQuery Innerfade plugin and additional view for ATFolder'",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
