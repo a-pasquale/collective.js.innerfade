@@ -33,6 +33,11 @@ Use buildout, or a similar method to install collective.collage.innerfade, (re)s
         Image image-4
         Link image-4.link
 
+Screenshot
+----------
+
+.. image:: http://plone.org/products/collective.js.innerfade/screenshot
+
 Development
 -----------
 
