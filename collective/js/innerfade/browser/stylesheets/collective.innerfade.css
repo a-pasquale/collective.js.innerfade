@@ -4,6 +4,7 @@
 
 #InnerfadeContainer {
     position: relative;
+    overflow: hidden;
 }
 
 #InnerfadeContainer a:visited {
@@ -44,16 +45,17 @@
     color: #fff;
     opacity: 1;
     margin: 0;
-    font-size: 1em;
 }
 
 #Innerfade .title {
     float: left;
-    margin: 10px 12px 5px 12px;
+    margin: 10px 12px 5px 0px;
 }
 
 #Innerfade h2 {
     float: left;
+    background-color: transparent;
+    font: bold 16px/16px Arial,Helvetica;
     padding-right: 7px;
 }
 
@@ -83,7 +85,7 @@
     position: absolute;
     width: 133px;
     height: 279px;
-    left: 470px;
+    left: 468px;
     top: 0;
 }
 

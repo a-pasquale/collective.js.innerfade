@@ -15,6 +15,6 @@ class FolderInnerfadeView(BrowserView):
         links = self.context.getFolderContents(contentFilter={'portal_type':'Link', 'id':imageId+'.link'})
 
         if links:
-            result = links[0].getRemoteUrl
+            result = links[0]
 
         return result
