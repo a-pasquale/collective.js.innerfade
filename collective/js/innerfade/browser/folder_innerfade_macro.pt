@@ -28,12 +28,12 @@
 
                 <tal:navblock tal:define="link python:view.getLink(image.id)">
                     <a href="#" tal:condition="link"
-                                tal:attributes="class string:imglink;
+                                tal:attributes="class string:ifnav imglink;
                                                 href link;
                                                 id string:ifnav${repeat/image/index}">
                         <img src="dummy" alt="dummy" tal:attributes="src image/getURL; alt image/Title" width="124" height="69" />
                     </a>
-                    <div class="imgnolink"
+                    <div class="ifnav imgnolink"
                          tal:attributes="id string:ifnav${repeat/image/index}"
                          tal:condition="not:link">
                         <img src="dummy"
