@@ -5,7 +5,7 @@ jq(document).ready(function() {
         timeout: '2000',
         containerheight: 279,
         animationtype: 'fade',
-        type: 'sequence',
+        type: 'sequence'
     }
 
     jq('#Innerfade').innerFade(options);
@@ -15,15 +15,18 @@ jq(document).ready(function() {
         // hover
         function() {
             id = jq(this).parent().attr('id').substr(5);
-            $('#Innerfade').innerFadeTo(id);
-        },
+            
+            jq('#Innerfade').innerFadeUnbind();
+            jq('#Innerfade').innerFadeTo(id);
+        }//,
 
         // hover out
-        function() {
-            id = jq(this).parent().attr('id').substr(5);
-            options['first_slide'] = id;
-            jq('#Innerfade').innerFadeUnbind();
-            jq('#Innerfade').innerFade(options);
-        }
-    );;
+        //function() {
+        //    id = jq(this).parent().attr('id').substr(5);
+        //    
+        //    options['first_slide'] = id;
+        //    jq('#Innerfade').innerFadeUnbind();
+        //   jq('#Innerfade').innerFade(options);
+        //}
+    );
 });
