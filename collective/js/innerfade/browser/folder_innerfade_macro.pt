@@ -1,48 +1,44 @@
 <div id="InnerfadeContainer" tal:define="images view/getImages">
 
     <div id="Innerfade">
-        <tal:images tal:define="images images">
-            <tal:repeat repeat="image images">
-                <div class="innerfade" tal:attributes="id string:ifblock${repeat/image/index}">
-                    <img src="dummy" alt="dummy" tal:attributes="src image/getURL; alt image/Title"/>
-                    <div class="overlay"></div>
-                    <div class="caption">
-                        <div class="title" tal:define="link python:view.getLink(image.id)">
-                            <h2 tal:content="image/Title">IMAGE TITLE</h2>
-                            <a href="" tal:condition="link"
-                                       tal:content="link/Title"
-                                       tal:attributes="href link/getRemoteUrl;
-                                                       class string:button">Lees meer</a>
-                        </div>
-                        <p tal:content="image/Description">
-                            IMAGE DESCRIPTION
-                        </p>
+        <tal:repeat repeat="image images">
+            <div class="innerfade" tal:attributes="id string:ifblock${repeat/image/index}">
+                <img src="dummy" alt="dummy" tal:attributes="src image/getURL; alt image/Title"/>
+                <div class="overlay"></div>
+                <div class="caption">
+                    <div class="title" tal:define="link python:view.getLink(image.id)">
+                        <h2 tal:content="image/Title">IMAGE TITLE</h2>
+                        <a href="" tal:condition="link"
+                                   tal:content="link/Title"
+                                   tal:attributes="href link/getRemoteUrl;
+                                                   class string:button">Lees meer</a>
                     </div>
+                    <p tal:content="image/Description">
+                        IMAGE DESCRIPTION
+                    </p>
                 </div>
-            </tal:repeat>
-        </tal:images>
+            </div>
+        </tal:repeat>
     </div>
 
     <div id="InnerfadeNavigation">
-        <tal:images tal:define="images images">
-            <tal:repeat repeat="image images">
+        <tal:repeat repeat="image images">
 
-                <tal:navblock tal:define="link python:view.getLink(image.id)">
-                    <a href="#" tal:condition="link"
-                                tal:attributes="class string:ifnav imglink;
-                                                href link;
-                                                id string:ifnav${repeat/image/index}">
-                        <img src="dummy" alt="dummy" tal:attributes="src image/getURL; alt image/Title" width="124" height="69" />
-                    </a>
-                    <div class="ifnav imgnolink"
-                         tal:attributes="id string:ifnav${repeat/image/index}"
-                         tal:condition="not:link">
-                        <img src="dummy"
-                             alt="dummy"
-                             tal:attributes="src image/getURL; alt image/Title" width="124" height="69" />
-                    </div>
-                </tal:navblock>
-            </tal:repeat>
-        </tal:images>
+            <tal:navblock tal:define="link python:view.getLink(image.id)">
+                <a href="#" tal:condition="link"
+                            tal:attributes="class string:ifnav imglink;
+                                            href link/getRemoteUrl;
+                                            id string:ifnav${repeat/image/index}">
+                    <img src="dummy" alt="dummy" tal:attributes="src image/getURL; alt image/Title" width="124" height="69" />
+                </a>
+                <div class="ifnav imgnolink"
+                     tal:attributes="id string:ifnav${repeat/image/index}"
+                     tal:condition="not:link">
+                    <img src="dummy"
+                         alt="dummy"
+                         tal:attributes="src image/getURL; alt image/Title" width="124" height="69" />
+                </div>
+            </tal:navblock>
+        </tal:repeat>
     </div>
 </div>
