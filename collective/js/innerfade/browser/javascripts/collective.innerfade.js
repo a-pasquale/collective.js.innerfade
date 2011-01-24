@@ -2,7 +2,7 @@ jq(document).ready(function() {
 
     var options = {
         speed: 'slow',
-        timeout: '2000',
+        timeout: '5000',
         containerheight: 279,
         animationtype: 'fade',
         type: 'sequence'
