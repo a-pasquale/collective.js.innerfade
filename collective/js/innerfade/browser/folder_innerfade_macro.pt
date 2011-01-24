@@ -11,7 +11,7 @@
                         <a href="" tal:condition="link"
                                    tal:content="link/Title"
                                    tal:attributes="href link/getRemoteUrl;
-                                                   class string:button">Lees meer</a>
+                                                   class string:innerfade-button">Lees meer</a>
                     </div>
                     <p tal:content="image/Description">
                         IMAGE DESCRIPTION

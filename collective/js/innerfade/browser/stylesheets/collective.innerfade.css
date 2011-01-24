@@ -22,6 +22,7 @@
 #InnerfadeContainer a:visited {
     border-bottom: 0px !important;
     color: #fff !important;
+    text-decoration: none;
 }
 
 #Innerfade {
@@ -71,9 +72,8 @@
     font: normal 11px/14px Arial, Helvetica;
 }
 
-#Innerfade .button {
+#Innerfade .innerfade-button {
     float: left;
-    width: 68px;
     height: 17px;
     background-image: url(++resource++collective.js.innerfade.images/button_middle_2x20.png);
     background-repeat: repeat-x;
@@ -81,10 +81,11 @@
     font: normal 9px/19px Arial, Helvetica;
     text-align: left;
     padding-left: 5px;
+    padding-right: 5px;
     -moz-border-radius: 2px;
 }
 
-#Innerfade .button:hover {
+#Innerfade .innerfade-button:hover {
     background-color: #b1b1b1;
     -moz-border-radius: 2px;
 }

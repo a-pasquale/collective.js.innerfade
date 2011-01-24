@@ -18,15 +18,6 @@ jq(document).ready(function() {
             
             jq('#Innerfade').innerFadeUnbind();
             jq('#Innerfade').innerFadeTo(id);
-        }//,
-
-        // hover out
-        //function() {
-        //    id = jq(this).parent().attr('id').substr(5);
-        //    
-        //    options['first_slide'] = id;
-        //    jq('#Innerfade').innerFadeUnbind();
-        //   jq('#Innerfade').innerFade(options);
-        //}
+        }
     );
 });
