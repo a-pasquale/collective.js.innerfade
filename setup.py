@@ -25,6 +25,7 @@ setup(name='collective.js.innerfade',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'collective.app.imaging',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
