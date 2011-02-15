@@ -28,7 +28,6 @@
 
 #Innerfade {
     overflow: hidden;
-    xheight: 279px;
 }
 
 #Innerfade .caption,
@@ -36,7 +35,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    height: 70px;
+    height: 68px;
     right: 0;
 }
 
@@ -99,7 +98,6 @@
 #InnerfadeNavigation {
     z-index: 4;
     position: absolute;
-    xheight: 279px;
     right: 0;
     top: 0;
 }
