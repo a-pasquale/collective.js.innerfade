@@ -3,6 +3,7 @@
 */
 
 #InnerfadeContainer {
+    width: 603px;
     position: relative;
     overflow: hidden;
 }
@@ -27,7 +28,7 @@
 
 #Innerfade {
     overflow: hidden;
-    height: 279px;
+    xheight: 279px;
 }
 
 #Innerfade .caption,
@@ -36,7 +37,7 @@
     left: 0;
     bottom: 0;
     height: 70px;
-    width: 477px;
+    right: 0;
 }
 
 #Innerfade .overlay {
@@ -52,6 +53,11 @@
     color: #fff;
     opacity: 1;
     margin: 0;
+}
+
+
+#Innerfade .caption h2 {
+    padding-left: 10px;
 }
 
 #Innerfade .title {
@@ -91,21 +97,18 @@
 }
 
 #InnerfadeNavigation {
-    z-index: 999;
+    z-index: 4;
     position: absolute;
-    width: 133px;
-    height: 279px;
-    left: 468px;
+    xheight: 279px;
+    right: 0;
     top: 0;
 }
 
 #InnerfadeNavigation .imgnolink,
 #InnerfadeNavigation a {
     display: block;
-    width: 133px;
-    height: 69px;
-    text-align: right;
     margin-bottom: 1px;
+    padding-left: 8px;
 }
 
 #InnerfadeNavigation .imgnolink:hover,

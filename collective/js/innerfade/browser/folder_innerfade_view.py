@@ -7,7 +7,7 @@ class FolderInnerfadeView(BrowserView):
 
     def getImages(self):
 
-        return self.context.getFolderContents(contentFilter={'portal_type':'Image'})
+        return self.context.listFolderContents(contentFilter={'portal_type':'Image'})
 
     def getLink(self, imageId):
 
