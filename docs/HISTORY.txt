@@ -1,5 +1,11 @@
 Changelog
 =========
+1.0-final
+-------------------
+
+- Now using plone.app.imaging
+- Improved scaling when images respect a 16:9 aspect ratio
+- Improved rendering
 
 1.0-b1
 -------------------

@@ -19,7 +19,7 @@ Usage
 Use buildout, or a similar method to install collective.collage.innerfade, (re)start your Plone instance and use the quick installer to install the product.
 
 #. Create a Folder.
-#. Add Image instances. For best results, add four Images in total. Default CSS works best for images scaled 478 x 280.
+#. Add Image instances. For best results, add four Images in total and use an aspect ratio of 16:9 
 #. Select the Innerfade view of the Folder you just created.
 #. Now, if you want the Images to contain links, add Link instances to the Folder. When you use the exact same id of an Image in the Folder and suffix it with ``.link``, the Link will attach itself to that particular Image, e.g.::
 
@@ -51,7 +51,9 @@ Please report issues to `Wietze Helmantel (main developer) <helmantel@gw20e.com>
 TODO
 ----
 
-Unit testing
+* Unit testing
+* Similar view for Topic content types
+* Configurable jQuery Innerfade parameters (maybe using a configlet)
 
 Sponsors
 --------
