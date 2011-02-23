@@ -8,6 +8,11 @@
     overflow: hidden;
 }
 
+#InnerfadeContainer #ifblock1,
+#InnerfadeContainer #ifblock2,
+#InnerfadeContainer #ifblock3 {
+    display: none;
+}
 
 #InnerfadeContainer h1,
 #InnerfadeContainer h2 {
@@ -120,3 +125,8 @@
     border-width: 0 0 0 1px;
 }
 
+/* PLONE GENERAL */
+
+#content-core {
+    overflow: hidden;
+}
