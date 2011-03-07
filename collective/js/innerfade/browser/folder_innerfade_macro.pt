@@ -13,7 +13,7 @@
                         <a href="" tal:condition="link"
                                    tal:attributes="href link/getRemoteUrl;
                                                    class string:innerfade-button">
-                            <span tal:content="link/Title"/><img alt="" src="++resource++collective.js.innerfade.images/arrow_right_6x10.png"/>
+                            <span tal:content="link/Title"/><img alt="" src="++resource++collective.js.innerfade.images/arrow_right_6x17.png"/>
                         </a>
                     </div>
                     <p tal:content="image/Description">
