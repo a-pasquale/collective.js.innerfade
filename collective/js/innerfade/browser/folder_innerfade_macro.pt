@@ -11,9 +11,10 @@
                     <div class="title" tal:define="link python:view.getLink(image.id)">
                         <h2 tal:content="image/Title">IMAGE TITLE</h2>
                         <a href="" tal:condition="link"
-                                   tal:content="link/Title"
                                    tal:attributes="href link/getRemoteUrl;
-                                                   class string:innerfade-button">MORE</a>
+                                                   class string:innerfade-button">
+                            <span tal:content="link/Title"/><img alt="" src="++resource++collective.js.innerfade.images/arrow_right_6x10.png"/>
+                        </a>
                     </div>
                     <p tal:content="image/Description">
                         IMAGE DESCRIPTION

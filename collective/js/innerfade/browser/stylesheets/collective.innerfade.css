@@ -85,14 +85,19 @@
 #Innerfade .innerfade-button {
     float: left;
     height: 17px;
-    background-image: url(++resource++collective.js.innerfade.images/button_middle_2x20.png);
+    background-image: url(++resource++collective.js.innerfade.images/button_back_transparent_1x17.png);
     background-repeat: repeat-x;
-    background-color: #008515;
+    background-color: #007D13;
     font: normal 9px/19px Arial, Helvetica;
     text-align: left;
     padding-left: 5px;
     padding-right: 5px;
     -moz-border-radius: 2px;
+    text-transform: uppercase;
+}
+
+#Innerfade .innerfade-button img {
+    padding: 0 0 1px 5px;
 }
 
 #Innerfade .innerfade-button:hover {

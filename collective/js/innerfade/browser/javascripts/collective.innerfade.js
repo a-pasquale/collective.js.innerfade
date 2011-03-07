@@ -18,6 +18,7 @@ jq(document).ready(function() {
             
             jq('#Innerfade').innerFadeUnbind();
             jq('#Innerfade').innerFadeTo(id);
+
         }
     );
 });
