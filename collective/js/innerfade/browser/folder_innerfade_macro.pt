@@ -4,7 +4,7 @@
         <tal:repeat repeat="image images">
             <div class="innerfade" tal:attributes="id string:ifblock${repeat/image/index}">
                 <img alt="" src="" tal:define="scale image/@@images"
-                     tal:replace="structure python: scale.scale('image', width=482, height=271).tag()" />
+                     tal:replace="structure python: scale.scale('image', width=480, height=271).tag()" />
 
                 <div class="overlay"></div>
                 <div class="caption">
