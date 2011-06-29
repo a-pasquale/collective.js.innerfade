@@ -3,7 +3,7 @@
 */
 
 #InnerfadeContainer {
-    width: 601px;
+    width: 960px;
     position: relative;
     overflow: hidden;
 }
@@ -116,7 +116,7 @@
 #InnerfadeNavigation .imgnolink,
 #InnerfadeNavigation a {
     display: block;
-    margin-bottom: 1px;
+    margin-bottom: 2px;
     padding-left: 8px;
 }
 

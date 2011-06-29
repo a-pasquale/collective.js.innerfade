@@ -4,7 +4,7 @@
         <tal:repeat repeat="image images">
             <div class="innerfade" tal:attributes="id string:ifblock${repeat/image/index}">
                 <img alt="" src="" tal:define="scale image/@@images"
-                     tal:replace="structure python: scale.scale('image', width=480, height=271).tag()" />
+                     tal:replace="structure python: scale.scale('image', width=770, height=436).tag()" />
 
                 <div class="overlay"></div>
                 <div class="caption">
@@ -33,13 +33,13 @@
                                             href link/getRemoteUrl;
                                             id string:ifnav${repeat/image/index}">
                     <img alt="" src=""  tal:define="scale image/@@images"
-                         tal:replace="structure python: scale.scale('image', width=120, height=67).tag()" />
+                         tal:replace="structure python: scale.scale('image', width=192, height=107).tag()" />
                 </a>
                 <div class="ifnav imgnolink"
                      tal:attributes="id string:ifnav${repeat/image/index}"
                      tal:condition="not:link">
                     <img alt="" src="" tal:define="scale image/@@images"
-                         tal:replace="structure python: scale.scale('image', width=120, height=67).tag()" />
+                         tal:replace="structure python: scale.scale('image', width=192, height=107).tag()" />
                 </div>
             </tal:navblock>
         </tal:repeat>

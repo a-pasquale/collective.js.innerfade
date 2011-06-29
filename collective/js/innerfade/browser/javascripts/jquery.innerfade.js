@@ -18,7 +18,7 @@
 		'timeout':					2000,
 		'startDelay': 				0,
 		'loop': 					true,
-		'containerHeight':			'auto',
+		'containerHeight':			'500px',
 		'runningClass':				'innerFade',
 		'children':					null,
 		'cancelLink':				null, 

@@ -1,0 +1,17 @@
+README.txt
+setup.py
+collective/__init__.py
+collective.js.innerfade.egg-info/PKG-INFO
+collective.js.innerfade.egg-info/SOURCES.txt
+collective.js.innerfade.egg-info/dependency_links.txt
+collective.js.innerfade.egg-info/entry_points.txt
+collective.js.innerfade.egg-info/namespace_packages.txt
+collective.js.innerfade.egg-info/not-zip-safe
+collective.js.innerfade.egg-info/requires.txt
+collective.js.innerfade.egg-info/top_level.txt
+collective/js/__init__.py
+collective/js/innerfade/__init__.py
+collective/js/innerfade/interfaces.py
+collective/js/innerfade/tests.py
+collective/js/innerfade/browser/__init__.py
+collective/js/innerfade/browser/folder_innerfade_view.py
